@@ -1,20 +1,25 @@
-# Student Task Manager (Java Console)
+# Student Task Manager
 
 ## Overview
-Menu-driven console app to manage student tasks (add/edit/delete/mark/export/backup). No GUI, no Maven.
+Student Task Manager is a Java-based, menu-driven console application that helps students organize academic tasks such as assignments, projects and study reminders. It stores tasks in CSV files, so data is persistent even after closing the program. :contentReference[oaicite:4]{index=4}
 
-## Requirements
-- Java 11+ installed
+## Features
+- Add new tasks with title, description, due date and status
+- Edit existing tasks
+- Delete tasks
+- Mark / unmark task completion
+- List all tasks
+- Import / export tasks as CSV
+- Backup data with timestamped folders :contentReference[oaicite:5]{index=5}
 
-## How to compile
-From project root:
-javac -d out src/com/taskmgr/**/*.java
+## Technologies / Tools Used
+- Java (JDK 11+)
+- Console-based UI (Scanner)
+- File I/O (Java NIO)
+- CSV-based storage
 
-## How to run
-java -cp out com.taskmgr.App
-
-Data files created in `data/tasks.csv`.
-Backups created in `Backups/Backup_yyyyMMdd_HHmmss`.
-
-## Notes
-Keep a copy of your project brief in the root: /mnt/data/BuildYourOwnProject.pdf. :contentReference[oaicite:2]{index=2}
+## How to Run
+1. Install Java JDK 11 or higher.
+2. Clone this repository:
+   ```bash
+   git clone <your-repo-url>
